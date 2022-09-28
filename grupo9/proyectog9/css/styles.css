@@ -10,6 +10,25 @@
     background: #D81324;
     text-align: center;
 }
+header p {
+    /* Catálogo Caballeros */
+    position: absolute;
+    width: 522px;
+    height: 74px;
+    left: 14px;
+    top: 8px;
+
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
 nav{
     /* Fondo NavBar */
     /*position: absolute;*/
