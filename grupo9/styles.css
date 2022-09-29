@@ -39,3 +39,25 @@ nav ul li,a {
 span {
    color:#F90000; 
 }
+#imbscdr{
+    /* caja de texto buscar */
+    position: absolute;
+    width: 220px;
+    height: 24px;
+    left: 803px;
+    top: 175px;
+}
+#imbscdr img {
+    /* icono lupa */
+    position: absolute;
+    width: 32px;
+    height: 23.23px;
+}
+#imcar{
+    /* icono Carrito */
+    position: absolute;
+    width: 30px;
+    height: 22px;
+    left: 1150px;
+    top: 175px;
+}
