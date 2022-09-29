@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <div id="logo">
+            <img src="logo.svg" alt="logo Old School">
+        </div>
+        <nav>
+            <p id="imcntct"><a href="">Contacto</a></p>
+            <p id="imrgstr"><a href="">Registro</a></p>
+            <label id="imbscdr" for="ibuscar"><input id="ibuscar" type="text" placeholder="Buscar"><a href=""><img src="lupa.svg" alt="lupa"></a></label>         
+            <a href=""><img  id="imcar" src="carro.svg" alt="carrito"></a>
+        </nav>
+    </header> 
     <form action="mailto:" method="post" enctype="text/plain">
-        <fieldset>
+        <fieldset class="margen">
           <legend>
               Registro de Usuario
           </legend>
@@ -29,11 +42,20 @@
               <label>Telefono:</label>
               <input type="tel" placeholder="Telefono:" ><br><br>
 
-              <img src="cancelar.svg">
-              <img src="confirmado.svg">
+              <label>Ubicacion:</label>
+              <input type="maps" placeholder="Telefono:" ><br><br>
+
+              <img src="cancelar.svg" class="cancelar">
+              <img src="confirmado.svg" class="corfimado">
       
             </div>
         </fieldset><br/>
     </form><hr><br>
+    <footer>
+        <section>
+            <p>Sobre la Tienda</p><p>Formas de entrega frente al Covid - 19</p><p>Términos y Condiciones</p>
+       <p>Equipo de Desarrollo  9  © Todos los Derechos Reservados 2022</p>
+        </section>
+        </footer>   
 </body>
 </html>
