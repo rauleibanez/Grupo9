@@ -279,3 +279,31 @@ main{
     height: 30px;
     align-content: center;
 }
+
+
+/*-----------------------------------------*/
+/*           Pagina Carrito            */
+/*-----------------------------------------*/
+
+/*Subtotal*/
+#opciall{
+    max-width: 100%;
+    display: grid;	
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2);
+}
+.opci{
+    max-width: 50%;
+    
+}
+.opci-aba{
+    max-width: 50%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.opci-sub{
+    width: 50%;
+    float: right;
+    grid-row: 1 / 3;
+}
