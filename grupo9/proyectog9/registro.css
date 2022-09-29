@@ -1,0 +1,18 @@
+* {
+    /*border: 1px dashed red;*/
+}
+form{
+  text-align: center;
+  border: 1px;
+}
+.cancelar{
+    float: left;
+    margin-right: 1px;
+
+}
+.confirmado{
+    float: right;
+}
+.margen{
+    
+}
