@@ -1,0 +1,15 @@
+/*etilo contacto*/
+#contacto{
+    width:300px;
+	padding:16px;
+	border-radius:10px;
+	margin:auto;
+    border-color: #000000;
+    /*background-color: #D81324;*/
+    width: 25%;
+    border: 1px solid #050505;
+}
+
+.confirmadocontacto{
+    float: right;
+}
