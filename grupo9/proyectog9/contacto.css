@@ -11,5 +11,9 @@
 }
 
 .confirmadocontacto{
+    float: left;
+    margin-right: 1px;
+}
+.cancelarcontacto{
     float: right;
 }
