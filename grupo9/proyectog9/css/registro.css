@@ -5,12 +5,15 @@
   }
   
   .form-register {
+    padding-top: 20px;
+    margin-top: 20px;
+
     width: 400px;
     background: #D81324;
-    padding: 30px;
+    padding: 16px;
     margin: auto;
     margin-top: 100px;
-    border-radius: 4px;
+    border-radius: 10px;
     font-family: 'calibri';
     color: white;
     box-shadow: 7px 13px 37px #000;
@@ -62,7 +65,11 @@
 
 .form-box {
     width: 300px;
-    padding: 40px;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
     background: #D81324;
     text-align: center;
 }
