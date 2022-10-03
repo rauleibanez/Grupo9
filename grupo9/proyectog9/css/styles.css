@@ -1,14 +1,4 @@
-*{
-    border: 1px dashed red;
-}
-body{
-    display: grid;	
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(4); 
-}
 #logo{
-    grid-column: 1 ;
-	grid-row: 1;
     /* Fondo Header */    
     /* Logo */
     /*position: absolute;*/
@@ -20,28 +10,7 @@ body{
     background: #D81324;
     text-align: center;
 }
-header p {
-    /* Catálogo Caballeros */
-    position: absolute;
-    width: 522px;
-    height: 74px;
-    left: 14px;
-    top: 8px;
-
-    font-family: 'Tinos';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 74px;
-    /* identical to box height */
-
-    text-align: center;
-
-    color: #FFFFFF;
-}
 nav{
-    grid-column: 1 ;
-	grid-row: 2;
     /* Fondo NavBar */
     /*position: absolute;*/
     width: 100%;
@@ -50,6 +19,7 @@ nav{
     top: 148.36px;
     /* Negro_Secundario_Fuerte */
     background: #000000;
+    /*transform: rotate(-0.21deg);*/
 }
 nav a{
     color:white;
@@ -111,17 +81,14 @@ nav a:hover{
     left: 1150px;
     top: 175px;
 }
-/*main{
+#iportada{
+    /* fondo de la pagina*/
     width: 100%;
-    height: 731px;
-    left: 0px;
-    top: 185px;    
-}*/
-main img{
-    grid-column: 1 ;
-	grid-row: 3;
-    /*top: 160px;*/
-    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*top: 185px;*/
+    position: relative;
 }
 #iopcatda{
     /* Ropa para ELLAS */
@@ -163,14 +130,11 @@ main img{
     line-height: 110px;
     font-weight: 700;
 }
-
 footer{
-    grid-column: 1 ;
-	grid-row: 4;
+    /* PIE DE PAGINA*/
+    position: absolute;
     width: 100%;
-    height: 124px;
-    /*left: 0px;
-    top: 0px;*/
+    height: 144px;
     color:white;
     /* Rojo_Primario_Fuerte */
     background: #D81324;
@@ -278,4 +242,32 @@ main{
     width: 30px;
     height: 30px;
     align-content: center;
+}
+
+
+/*-----------------------------------------*/
+/*           Pagina Carrito            */
+/*-----------------------------------------*/
+
+/*Subtotal*/
+#opciall{
+    max-width: 100%;
+    display: grid;	
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2);
+}
+.opci{
+    max-width: 50%;
+    
+}
+.opci-aba{
+    max-width: 50%;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+}
+
+.opci-sub{
+    width: 50%;
+    float: right;
+    grid-row: 1 / 3;
 }
