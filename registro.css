@@ -14,5 +14,12 @@ form{
     float: right;
 }
 .margen{
-    
+    align-content: center;
+    display: grid;
+    grid-template-columns: 3, 1fr;
+    grid-template-rows: 1;
+    grid-row-gap: 2.5em;
+}
+.margen div{
+    align-content: center;
 }
