@@ -3,92 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <title>OLD School - Tienda On Line</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   <header>
-        <p>Catalogo Damas</p>
-       <div id="logo">
-           <img src="svg/logo.svg" alt="logo Old School">
+<header>
+       <p>Catalogo Damas</p>
+        <div id="ilogo">
+          <a href="index.html"><img src="svg/logo.svg" alt="logo Old School"></a>
        </div>
-       <nav>
-           <p id="imcntct"><a href="">Contacto</a></p>
-           <p id="imrgstr"><a href="">Registro</a></p>
-           <label id="imbscdr" for="ibuscar"><input id="ibuscar" type="text" placeholder="Buscar"><a href=""><img src="svg/lupa.svg" alt="lupa"></a></label>         
-           <a href="#"><img  id="imcar" src="svg/carro.svg" alt="carrito"></a>
+
+       <nav class="navbar navbar-expand-lg">
+           <div class="container">
+               <a href="">Contacto</a>
+               <a href="">Registro</a>
+               <a href="">           </a>
+               <form class="d-flex" role="search">
+               <input id="ifbscr" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <a href=""><img id="ibscr" src="svg/lupa.svg" alt="lupa"></a>
+               <!--button class="btn btn-outline-success" type="submit">Buscar</button-->
+               </form>
+               <a href=""><img id="icart" src="svg/carro.svg" alt="carrito"></a>
+               </div>
        </nav>
-   </header> 
+    </header> 
    <main>
-       <section class="slider">
-            <article class="nvgdrizq">
-                <img class="flechas" src="svg/flechaizq.svg" alt="flechaizq">
-            </article>
-            <article class="ficcat">
-                <img src="img/catdam/foto1.png" alt="foto1">
-                <p>Modelo 2342</p>
-                <div class="cartico">
-                    <img class="imgcarro" src="svg/addcart.svg" alt="addcarro">
+      <section id="islider">
+       <div class="container text-center">
+          <div class="row">
+            <div class="col">
+               <div class="flechaizq">
+                <img src="svg/flechaizq.svg" alt="">
+               </div>
+            </div>
+             <div class="col" >
+                 <div class="card">
+                     <img src="img/catdam/foto1.png" class="card-img-top" alt="foto1">
+                 
+                 <div class="card-body">
+                    <h5 class="card-title">Modelo 2342</h5>
+                     <p class="card-text">$ 190.000,00</p>
+                     <a href="carrito.html"> <img src="svg/addcart.svg" alt="carro"></a>
+                 </div>
+                 </div>
+             </div>
+             <div class="col" >
+                <div class="card">
+                    <img src="img/catdam/foto2.png" class="card-img-top" alt="foto2">
+                 <div class="card-body">
+                    <h5 class="card-title">Modelo 8651</h5>
+                     <p class="card-text">$ 150.000,00</p>
+                     <a href="#"> <img src="svg/addcart.svg" alt="carro"></a>
+                 </div>                    
                 </div>
-                <p class="precio">$ 190.000,00</p>
-            </article>
-            <article class="ficcat">
-                <img src="img/catdam/foto2.png" alt="foto2">
-                <p>Modelo 8651</p>
-                <div class="cartico">
-                    <img class="imgcarro" src="svg/addcart.svg" alt="addcarro">
+             </div>
+             <div class="col" >
+                <div class="card">
+                    <img src="img/catdam/foto3.png" class="card-img-top" alt="foto3">
+                 <div class="card-body">
+                    <h5 class="card-title">Modelo 9497</h5>
+                     <p class="card-text">$ 260.000,00</p>
+                     <a href="#"> <img src="svg/addcart.svg" alt="carro"></a>
+                 </div>                    
                 </div>
-                <p class="precio">$ 150.000,00</p>                
-            </article>                                
-            <article class="ficcat">            
-                <img src="img/catdam/foto3.png" alt="foto3">
-                <p>Modelo 9497</p>
-                <div class="cartico">
-                    <img class="imgcarro" src="svg/addcart.svg" alt="addcarro">
+             </div>
+            <div class="col">
+               <div class="flechader">
+                <img src="svg/flechader.svg" alt="">
+               </div>
+            </div>
+          </div>             
+       <div class="row"><p>      </p></div>
+          <div class="row">
+              <div class="col">
+               <div class="flechaizq">
+                <img src="svg/flechaizq.svg" alt="">
+               </div>
+            </div>
+             <div class="col" >
+                 <div class="card">
+                     <img src="img/catdam/foto4.png" class="card-img-top" alt="foto4">
+                 <div class="card-body">
+                    <h5 class="card-title">Modelo 1482</h5>
+                     <p class="card-text">$ 90.000,00</p>
+                     <a href="#"> <img src="svg/addcart.svg" alt="carro"></a>
+                 </div>                     
+                 </div>
+             </div>
+             <div class="col" >
+                <div class="card">
+                    <img src="img/catdam/foto5.png" class="card-img-top" alt="foto5">
+                 <div class="card-body">
+                    <h5 class="card-title">Modelo 4522</h5>
+                     <p class="card-text">$ 120.000,00</p>
+                     <a href="#"> <img src="svg/addcart.svg" alt="carro"></a>
+                 </div>
                 </div>
-                <p class="precio">$ 260.000,00</p>                
-            </article>
-            <article class="nvgdrder">
-                <img class="flechas" src="svg/flechader.svg" alt="flechader">
-            </article>
-       </section>
-       <section class="slider">
-            <article class="nvgdrizq">
-                <img class="flechas" src="svg/flechaizq.svg" alt="flechaizq">
-            </article>
-            <article class="ficcat">
-                <img src="img/catdam/foto4.png" alt="foto4">
-                <p>Modelo 1482</p>
-                <div class="cartico">
-                    <img class="imgcarro" src="svg/addcart.svg" alt="addcarro">
+             </div>
+             <div class="col" >
+                <div class="card">
+                    <img src="img/catdam/foto6.png" class="card-img-top" alt="foto6">
+                 <div class="card-body">
+                    <h5 class="card-title">Modelo 2931</h5>
+                     <p class="card-text">$ 220.000,00</p>
+                     <a href="#"> <img src="svg/addcart.svg" alt="carro"></a>
+                 </div>
                 </div>
-                <p class="precio">$  90.000,00</p>                
-            </article>
-            <article class="ficcat">
-                <img src="img/catdam/foto5.png" alt="foto5">
-                <p>Modelo 4522</p>
-                <div class="cartico">
-                    <img class="imgcarro" src="svg/addcart.svg" alt="addcarro">
-                </div>
-                <p class="precio">$ 120.000,00</p>                
-            </article>                                
-            <article class="ficcat">
-                <img src="img/catdam/foto6.png" alt="foto6">
-                <p>Modelo 2931</p>
-                <div class="cartico">
-                    <img class="imgcarro" src="svg/addcart.svg" alt="addcarro">
-                </div>
-                <p class="precio">$ 220.000,00</p>                
-            </article>
-            <article class="nvgdrder">
-                <img class="flechas" src="svg/flechader.svg" alt="flechader">
-            </article>
-       </section>
+             </div>
+            <div class="col">
+               <div class="flechader">
+                <img src="svg/flechader.svg" alt="">
+               </div>
+            </div>
+          </div>
+       </div>
+    </section>   
    </main>
    <footer>
-   <section>
-       <p>Sobre la Tienda</p><p>Formas de entrega frente al Covid - 19</p><p>Términos y Condiciones</p>
-  <p>Equipo de Desarrollo  9  © Todos los Derechos Reservados 2022</p>
-   </section>
+       <p>Sobre la Tienda</p>
+       <p>Formas de entrega frente al Covid - 19</p>
+       <p>Términos y Condiciones</p>
+       <p>Equipo de Desarrollo  9  © Todos los Derechos Reservados 2022</p>
    </footer>   
 </body>
 </html>

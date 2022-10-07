@@ -1,40 +1,67 @@
+<!--
+* ========================
+ * Archivo    : index.html;
+ * Descripcion: Pagina de Inicio del   
+ *              Proyecto Final Modulo 3;
+ * Autor      : Raul Ibañez;
+ * Version    : 3.0;
+ * Fecha      : 01/10/2022;
+ * Integrantes: Becerra Nicolas
+                Castañeda Stiven
+                Guevara Nelson
+                Ibañez Raul     
+ * ========================
+ * Implementacion de Bootstrap
+ *  
+ * ========================
+ -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>OLD School - Tienda On Line</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-   <header>
-       <div id="logo">
-           <img src="svg/logo.svg" alt="logo Old School">
+    <header>
+        <div id="ilogo">
+          <a href=""><img src="svg/logo.svg" alt="logo Old School"></a>
        </div>
-       <nav>
-           <p id="imcntct"><a href="">Contacto</a></p>
-           <p id="imrgstr"><a href="">Registro</a></p>
-           <label id="imbscdr" for="ibuscar"><input id="ibuscar" type="text" placeholder="Buscar"><a href=""><img src="svg/lupa.svg" alt="lupa"></a></label>         
-           <a href=""><img  id="imcar" src="svg/carro.svg" alt="carrito"></a>
+
+       <nav class="navbar navbar-expand-lg">
+           <div class="container">
+               <a href="">Contacto</a>
+               <a href="">Registro</a>
+               <a href="">           </a>
+               <form class="d-flex" role="search">
+               <input id="ifbscr" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+               <a href=""><img id="ibscr" src="svg/lupa.svg" alt="lupa"></a>
+               <!--button class="btn btn-outline-success" type="submit">Buscar</button-->
+               </form>
+               <a href="carrito.html"><img id="icart" src="svg/carro.svg" alt="carrito"></a>
+               </div>
+               
        </nav>
-   </header> 
-   <main>
-     
-      <img id="iportada" src="fondo.jpg" alt="portada">
+    </header>    
+    <main>
+       <div class="portada">
+           <img src="img/fondo.jpg" alt="">
+       </div>
        <section>
-           <p id="iopcatda"><a href="#">Ropa para ELLAS</a></p>
+           <p id="iopcatda"><a href="catalogod.html">Ropa para ELLAS</a></p>
        </section>
        <section>
-           <p id="iopcatca"><a href="#">Ropa para ELLOS</a></p>
-       </section>
-     
-   </main>
-   <footer>
-   <section>
-       <p>Sobre la Tienda</p>
-       <p>Formas de entrega frente al Covid - 19</p>
-       <p>Términos y Condiciones</p>
-       <p>Equipo de Desarrollo  9  © Todos los Derechos Reservados 2022</p>
-   </section>
-   </footer>   
+           <p id="iopcatca"><a href="catalogoc.html">Ropa para ELLOS</a></p>
+       </section> 
+    </main>
+<footer>
+     <p>Sobre la Tienda</p>
+     <p>Formas de entrega frente al Covid - 19</p>
+     <p>Términos y Condiciones</p>
+     <p>Equipo de Desarrollo  9  © Todos los Derechos Reservados 2022</p>
+</footer>
 </body>
 </html>
