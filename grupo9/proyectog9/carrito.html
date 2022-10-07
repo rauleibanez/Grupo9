@@ -29,7 +29,7 @@
                </div>
        </nav>
     </header>    
-    <main>
+    <main #islider>
     <!--Layout grid con Bootstrap -->
     <div class="container text-center">
         <div class="row">
@@ -60,10 +60,10 @@
                                <img src="svg/mas.svg" alt="">                       
                                </div>
                            </div>
-                           <div class="container" style="background-color:yellow;">
+                           <div class="container">
                                <div class="okboton">
                                    <img src="svg/ok.svg" alt="">
-                                   <p> 12.590,00</p>
+                                   <p style="padding-left: 5%;"> 12.590,00</p>
                                </div>
                            </div>
                            </div>
@@ -97,10 +97,10 @@
                                <img src="svg/mas.svg" alt="">                       
                                </div>
                            </div>
-                           <div class="container" style="background-color:yellow;">
+                           <div class="container">
                                <div class="okboton">
                                    <img src="svg/ok.svg" alt="">
-                                   <p> 12.590,00</p>
+                                   <p style="padding-left: 5%;"> 12.590,00</p>
                                </div>
                            </div>
                            </div>
@@ -110,8 +110,24 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" style="background-color:red;">FILA 1 COL 2
-            <img src="subt.png" alt="SubTotal">
+            <div class="col-md-6" style="background-color:hsl(0, 0%, 96%); width: 50%; border: 1px solid hsl(0, 100%, 49%);">FILA 1 COL 2
+                <div style="position: absolute; display:flex; padding-left:3%; font-size: 30px; width: 40%; border: 1px solid hsl(0, 100%, 49%);">
+                    <p>SUBTOTAL</p>
+                    <P style="padding-left: 20%;">PEDIDO</P>
+                </div>
+                <div style="padding-top:15%; font-size:30px">
+                    <p>$ 12.99.99,00</p>
+                </div>
+               
+                <div style="float: left; padding-left: 10%; padding-top: 1%;">
+                    <img src="svg/cancelarpedido.svg" alt="pedidocancelado">
+                </div>
+                
+                <div style="float: right; padding-right: 10%; padding-top: 1%;">
+                    <img src="svg/aceptarpedido.svg" alt="pedidoaceptado">
+                </div>
+                
+                <!--<img src="img/carocompras/subt.png" alt="SubTotal">-->
             </div>
         </div>
     </div>
