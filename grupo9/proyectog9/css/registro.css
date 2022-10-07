@@ -1,23 +1,25 @@
-* {
-  /*border: 1px dashed red;*/
+.margen{
+   margin-left: 35%;
+   margin-right: 35%;
 }
-form{
-  text-align: center;
+.form{
+  text-align: center; 
+}
+#img{
+  display: flex;
+  justify-content: space-between;
+}
+.form-datos{
   border: 1px;
-  margin-left: 33%;
-  margin-right: 33%;
 }
 .cancelar{
   float: left;
-  margin-right: 1px;
+}
 
-}
-.confirmado{
-  float: right;
-}
 
 /*exitoso*/
 .mmensaje{
+  
   height: 400%;
 }
  .exitoso{
