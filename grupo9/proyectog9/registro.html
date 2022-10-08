@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OLD School - Tienda On Line</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/registro.css">
+
+    <title>Document</title>
 </head>
 <body>
     <header>
-       <p>Registro</p>
+        <p>Registro de Usuarios</p>
         <div id="ilogo">
           <a href="index.html"><img src="svg/logo.svg" alt="logo Old School"></a>
        </div>
@@ -18,26 +20,25 @@
        <nav class="navbar navbar-expand-lg">
            <div class="container">
                <a href="">Contacto</a>
-               <a href="">Registro</a>
+               <a href="registro.html">Registro</a>
                <a href="">           </a>
                <form class="d-flex" role="search">
                <input id="ifbscr" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
                <a href=""><img id="ibscr" src="svg/lupa.svg" alt="lupa"></a>
                <!--button class="btn btn-outline-success" type="submit">Buscar</button-->
                </form>
-               <a href=""><img id="icart" src="svg/carro.svg" alt="carrito"></a>
+               <a href="login.html"><img id="icart" src="svg/carro.svg" alt="carrito"></a>
                </div>
        </nav>
-   </header>
-   <main class="container">
-    <form id="formulario" action="mailto:" method="post" enctype="text/plain">
-        <div class="cajaform">
-          <div class="titform">
-              <p>Registro de Usuarios</p>
-          </div>
-          <div class="corpform">
+    </header>   <br><br> 
+    <form action="mailto:" method="post" enctype="text/plain" >
+        <fieldset class="margen">
+          <legend>
+              <h1>Registro de Usuario</h1>
+          </legend>
+          <div class="form-datos" text="center">
 
-              <label>Usuario</label>
+              <label>Correo:</label>
               <input type="email" placeholder="Ingresa Tu Correo:" required><br><br>
     
               <label>Contraseña:</label>
@@ -52,17 +53,18 @@
               <label>Telefono:</label>
               <input type="tel" placeholder="Telefono:" ><br><br>
 
-              <label>Ubicación:</label>
+              <label>Ubicacion:</label>
               <input type="maps" placeholder="Telefono:" ><br><br>
-              <div class="opcform">
 
-              <img src="svg/cancelar.svg" class="cancelar">
-              <img src="svg/confirmado.svg" class="corfimado">
+              <div id="img">
+                <a href="index.html"><img src="svg/cancelar.svg" class="cancelar"></a>
+              <a href="exitoso.html"><img src="svg/confirmado.svg" class="confirmado"></a>
               </div>
+            
             </div>
-        </div>
-    </form>
-    </main>
+        </fieldset><br/>
+    </form><hr><br>
+    </div>
     <footer>
         <section>
             <p>Sobre la Tienda</p><p>Formas de entrega frente al Covid - 19</p><p>Términos y Condiciones</p>

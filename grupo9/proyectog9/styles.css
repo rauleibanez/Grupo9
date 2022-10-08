@@ -1,0 +1,146 @@
+* {
+    /*border: 1px dashed red;*/
+}
+#logo{
+    /* Fondo Header */    
+    /* Logo */
+    /*position: absolute;*/
+    width: 100%;
+    height: 148px;
+    left: 0px;
+    top: 0px;
+    /* Rojo_Primario_Fuerte */
+    background: #D81324;
+    text-align: center;
+}
+nav{
+    /* Fondo NavBar */
+    /*position: absolute;*/
+    width: 100%;
+    height: 46.16px;
+    left: 0.12px;
+    top: 148.36px;
+    /* Negro_Secundario_Fuerte */
+    background: #000000;
+    /*transform: rotate(-0.21deg);*/
+}
+nav a{
+    color:white;
+    text-decoration: none;
+}
+nav a:hover{
+    color:#D81324;
+}
+#imcntct{
+    /* opcion Contacto */
+    position: absolute;
+    width: 71px;
+    height: 21px;
+    left: 148px;
+    top: 159px;
+
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+#imrgstr{
+    /* opcion Registro */
+    position: absolute;
+    width: 65px;
+    height: 21px;
+    left: 381px;
+    top: 159px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+#imbscdr{
+    /* caja de texto buscar */
+    position: absolute;
+    width: 220px;
+    height: 24px;
+    left: 803px;
+    top: 175px;
+}
+#imbscdr img {
+    /* icono lupa */
+    position: absolute;
+    width: 32px;
+    height: 23.23px;
+}
+#imcar{
+    /* icono Carrito */
+    position: absolute;
+    width: 30px;
+    height: 22px;
+    left: 1150px;
+    top: 175px;
+}
+main{
+    width: 100%;
+    height: 731px;
+    left: 0px;
+    top: 185px;    
+}
+main img{
+    width: auto;
+}
+#iopcatda{
+    /* Ropa para ELLAS */
+    position: absolute;
+    width: 416px;
+    height: 220px;
+    left: 77px;
+    top: 339px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 110px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-22.35deg);
+}
+#iopcatca{
+    /* Ropa para ELLOS */
+    position: absolute;
+    width: 416px;
+    height: 220px;
+    left: 832px;
+    top: 339px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 110px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-22.35deg);    
+}
+#iopcatca a,  #iopcatda a{
+    color:white;
+    text-decoration: none;
+}
+#iopcatca a:hover,  #iopcatda a:hover{
+    line-height: 110px;
+    font-weight: 700;
+}
+
+footer{
+    width: 100%;
+    height: 124px;
+    /*left: 0px;
+    top: 0px;*/
+    color:white;
+    /* Rojo_Primario_Fuerte */
+    background: #D81324;
+    text-align: center;
+}

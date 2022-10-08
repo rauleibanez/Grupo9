@@ -84,6 +84,7 @@ span {
     border: 1px solid #0500FF;
     border-radius: 10px;
     margin-bottom: 15px;
+
 }
 .rectangulo {
     margin-top: 16px;
@@ -119,7 +120,7 @@ span {
     line-height: 20px;
     text-align: justify;
     color: #FFFFFF;
-    height: 25vh;
+    height: 45vh;
 }
 /* el separador */
 .separador {
@@ -147,6 +148,7 @@ footer {
     height: auto;
     /*background-color:cornflowerblue;*/
     background-color:rgba(6, 90, 247, 0.322);
+    text-align: center;
     }
     #ititulo{
         grid-column: 1/2;
@@ -171,6 +173,14 @@ footer {
         /*background-color:cornflowerblue;*/
         background-color:rgba(6, 90, 247, 0.322);
     }
+    #ifotit{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #ifomen{
+        grid-column: 1;
+        grid-row: 3;
+    }
 }
 
 @media screen and (min-width: 420px) and (max-width: 960px){
@@ -192,5 +202,22 @@ footer {
 	grid-row: 3;
 	display: flex;
 	float: right;
+    }
+    footer{
+        display: grid;	
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 3;
+        width: 100%;
+        height: auto;
+        /*background-color:cornflowerblue;*/
+        background-color:rgba(6, 90, 247, 0.322);
+    }
+    #ifotit{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #ifomen{
+        grid-column: 1;
+        grid-row: 3;
     }
 }

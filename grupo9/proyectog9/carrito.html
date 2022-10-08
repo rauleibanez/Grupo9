@@ -4,38 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+    <title>Carrito</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="svg/addcart.svg" type="image/svg+xml">
  
 </head>
 <body>
     <header>
+        <p>Carrito de Compra</p>
         <div id="ilogo">
           <a href="index.html"><img src="svg/logo.svg" alt="logo Old School"></a>
        </div>
 
        <nav class="navbar navbar-expand-lg">
-           <div class="container">
-               <a href="">Contacto</a>
-               <a href="">Registro</a>
-               <a href="">           </a>
-               <form class="d-flex" role="search">
-               <input id="ifbscr" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-               <a href=""><img id="ibscr" src="svg/lupa.svg" alt="lupa"></a>
-               <!--button class="btn btn-outline-success" type="submit">Buscar</button-->
-               </form>
-               <a href=""><img id="icart" src="svg/carro.svg" alt="carrito"></a>
-               </div>
-       </nav>
+        <div class="container">
+            <a href="contacto.html">Contacto</a>
+            <a href="registro.html">Registro</a>
+            <a href="">           </a>
+            <form class="d-flex" role="search">
+            <input id="ifbscr" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <a href=""><img id="ibscr" src="svg/lupa.svg" alt="lupa"></a>
+            <!--button class="btn btn-outline-success" type="submit">Buscar</button-->
+            </form>
+            <a href="login.html"><img id="icart" src="svg/carro.svg" alt="carrito"></a>
+            </div>
+    </nav>
     </header>    
-    <main>
+    <main #islider>
     <!--Layout grid con Bootstrap -->
     <div class="container text-center">
         <div class="row">
             <div class="col-md-6">
                 <div class="row">
-                    <div class="container text-center" style="background-color:white;">FILA 1 COL 1
+                    <div class="container text-center" style="background-color:white; padding-top: 5%;">
                        <!-- Tarjeta del producto1 -->
                         <div class="row" style="width: 80%; border:1px solid black;">
                            <div class="col-md-2" style="width: 50%">
@@ -60,10 +62,10 @@
                                <img src="svg/mas.svg" alt="">                       
                                </div>
                            </div>
-                           <div class="container" style="background-color:yellow;">
+                           <div class="container">
                                <div class="okboton">
                                    <img src="svg/ok.svg" alt="">
-                                   <p> 12.590,00</p>
+                                   <p style="padding-left: 5%;"> 12.590,00</p>
                                </div>
                            </div>
                            </div>
@@ -72,7 +74,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="container">FILA 2 COL 1
+                    <div class="container"><br>
                        <!-- Tarjeta del producto 2 -->
                         <div class="row" style="width: 80%; border: 1px solid black;">
                            <div class="col-md-2" style="width: 50%">
@@ -97,10 +99,10 @@
                                <img src="svg/mas.svg" alt="">                       
                                </div>
                            </div>
-                           <div class="container" style="background-color:yellow;">
+                           <div class="container">
                                <div class="okboton">
                                    <img src="svg/ok.svg" alt="">
-                                   <p> 12.590,00</p>
+                                   <p style="padding-left: 5%;"> 12.590,00</p>
                                </div>
                            </div>
                            </div>
@@ -110,11 +112,27 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" style="background-color:red;">FILA 1 COL 2
-            <img src="subt.png" alt="SubTotal">
+            <div class="col-md-6" style="background-color:hsl(0, 0%, 96%); width: 50%; border: 1px solid hsl(0, 100%, 49%);">
+                <div style="position: absolute; display:flex; padding-left:3%; font-size: 30px; width: 40%; border: 1px solid hsl(0, 100%, 49%);">
+                    <p>SUBTOTAL</p>
+                    <P style="padding-left: 20%;">PEDIDO</P>
+                </div>
+                <div style="padding-top:15%; font-size:30px">
+                    <p>$ 12.99.99,00</p>
+                </div>
+               
+                <div style="float: left; padding-left: 10%; padding-top: 1%;">
+                    <a href="pedidocancelado.html"><img src="svg/cancelarpedido.svg" alt="pedidocancelado"></a>
+                </div>
+                
+                <div style="float: right; padding-right: 10%; padding-top: 1%;">
+                    <a href="pedidoexitoso.html"><img src="svg/aceptarpedido.svg" alt="pedidoaceptado"></a>
+                </div>
+                
+                <!--<img src="img/carocompras/subt.png" alt="SubTotal">-->
             </div>
         </div>
-    </div>
+    </div><br>
       
     </main>
     <footer>

@@ -1,0 +1,27 @@
+.margen{
+  border-radius:10px;
+  border: 1px solid black; 
+   margin-left: 36%;
+   margin-right: 36%;
+   text-align: center; 
+}
+.form{
+  text-align: center; 
+}
+#img{
+  display: flex;
+  justify-content: space-between;
+}
+.cancelar{
+  float: left;
+}
+
+/*exitoso*/
+.mmensaje{
+  
+  height: 400%;
+}
+ .exitoso1{
+  text-align: center;
+ }
+ 
