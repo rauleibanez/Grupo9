@@ -1,3 +1,18 @@
+/*************************************************
+ * Archivo    : styles.css;
+ * Descripcion: Hoja de estilos de la pagina del 
+ *              Proyecto Final Modulo 3;
+ * Autor      : Raul Ibañez;
+ * Version    : 2.0;
+ * Fecha      : 03/10/2022;
+ * Integrantes: Becerra Nicolas
+ *              Castañeda Stiven
+ *              Guevara Nelson
+ *              Ibañez Raul     
+ *-----------------------------------------------
+ *  CSS DEL INDEX - DE CATALOGOS DE DAMAS Y CABALLEROS
+ *-----------------------------------------------
+ */
 header{
     position: relative;
     width: 100%;
@@ -5,6 +20,7 @@ header{
     /* Fondo Header */ 
     /* Rojo_Primario_Fuerte */
     background: #D81324;
+    /*Orden de presentacion de elementos*/
     z-index: 1;
 }
 header p{
@@ -25,6 +41,7 @@ header p{
 }
 #ilogo{   
     /* Logo */
+    /*Orden de presentacion de elementos*/
     z-index:3;
     position: relative;
     width: 100%;
@@ -128,12 +145,60 @@ footer{
     /* PIE DE PAGINA*/
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 144px;
     color:white;
     /* Rojo_Primario_Fuerte */
-    background: hsl(355, 84%, 46%);
+    background: #D81324;
     text-align: center;
 
+}
+/*---------------------------------------*/
+/*   CSS DEL REGISTRO                     */
+/*---------------------------------------*/
+.padreform{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.cajaform{
+    /* caja del formulario*/
+    box-sizing: border-box;
+    margin-top: 50px; 
+    width: 421px;
+    height: 482px;
+    left: 512px;
+    top: 294px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 50px;
+    
+    margin-right: 0; 
+    margin-left:0;
+}
+#formulario{
+    position: absolute;
+    margin: 0;
+    padding: 0;  
+}
+.titform {
+    height: 82px;
+    border: 1px solid #000000;    
+    text-align: center;
+
+}
+.titform p {
+    display: flex;
+    text-align: center;
+    left: 67px;
+    margin-top: 20px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    /* identical to box height */
+    /* Negro_Secundario_Fuerte */
+    color: #000000;
 }
 /*---------------------------------------*/
 /*   CSS DEL CARRITO DE COMPRA           */
@@ -218,10 +283,9 @@ footer{
     height: 32px;
     background: #D81324;
 }
-/* -------------------------------*/
-/* CSS DE carrito                */
-/*--------------------------------*/
-
-.row{
-    padding-top: ;
-}
+/*--------------------------------------------
+ *  MEDIA QUERIES INDEX 
+ *--------------------------------------------
+*/
+@media screen (max-width: 300px){
+} 
