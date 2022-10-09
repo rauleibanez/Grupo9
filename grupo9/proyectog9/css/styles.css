@@ -128,10 +128,10 @@ footer{
     /* PIE DE PAGINA*/
     position: absolute;
     width: 100%;
-    height: 20%;
+    height: 144px;
     color:white;
     /* Rojo_Primario_Fuerte */
-    background: hsl(355, 84%, 46%);
+    background: #D81324;
     text-align: center;
 
 }
@@ -175,6 +175,17 @@ footer{
 .okboton{
     display: flex;
 }
+/*--------------------------------*/
+/* CSS DE COMPRA EXITOSA          */
+/*--------------------------------*/
+.exitoso{
+    color: red;
+    text-align: center;
+}
+.cancelado{
+    color: black;
+    text-align: center; 
+}
 /* -------------------------------*/
 /* CSS DE CATALOGOS               */
 /*--------------------------------*/
@@ -217,11 +228,4 @@ footer{
     width: 32px;
     height: 32px;
     background: #D81324;
-}
-/* -------------------------------*/
-/* CSS DE carrito                */
-/*--------------------------------*/
-
-.row{
-    padding-top: ;
 }
