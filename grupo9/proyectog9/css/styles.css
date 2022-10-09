@@ -1,43 +1,50 @@
-header{
-    position: relative;
-    width: 100%;
-    height: 194.16px;
-    /* Fondo Header */ 
-    /* Rojo_Primario_Fuerte */
-    background: #D81324;
-    z-index: 1;
+body{
+    display: grid;	
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(4); 
 }
-header p{
-    /* Titulo del Header */
-    position: absolute;
-    width: 426px;
-    height: 74px;
-    left: 20px;
-    top: 45px;
-    font-family: 'Tinos';
-    font-style: normal;
-    font-weight: 325;
-    font-size: 50px;
-    line-height: 74px;
-    /* identical to box height */
-    text-align: center;
-    color: #FFFFFF;
-}
-#ilogo{   
+#logo{
+    grid-column: 1 ;
+	grid-row: 1;
+    /* Fondo Header */    
     /* Logo */
-    z-index:3;
-    position: relative;
+    /*position: absolute;*/
     width: 100%;
     height: 148px;
+    left: 0px;
+    top: 0px;
+    /* Rojo_Primario_Fuerte */
+    background: #D81324;
     text-align: center;
 }
+header p {
+    /* Catálogo Caballeros */
+    position: absolute;
+    width: 522px;
+    height: 74px;
+    left: 14px;
+    top: 8px;
+
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 74px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+}
 nav{
+    grid-column: 1 ;
+	grid-row: 2;
     /* Fondo NavBar */
-    position: relative;
-    z-index: 2;
+    /*position: absolute;*/
     width: 100%;
     height: 46.16px;
-    overflow: hidden;
+    left: 0.12px;
+    top: 148.36px;
     /* Negro_Secundario_Fuerte */
     background: #000000;
 }
@@ -48,11 +55,36 @@ nav a{
 nav a:hover{
     color:#D81324;
 }
-#ifbscr{
-    /*input del Form del buscador del Navbar*/
-    height: 24px;
-    width: 150px;
-    left: 970px;
+#imcntct{
+    /* opcion Contacto */
+    position: absolute;
+    width: 71px;
+    height: 21px;
+    left: 148px;
+    top: 159px;
+
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+#imrgstr{
+    /* opcion Registro */
+    position: absolute;
+    width: 65px;
+    height: 21px;
+    left: 381px;
+    top: 159px;
+    font-family: 'Tinos';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #FFFFFF;
 }
 #imbscdr{
     /* caja de texto buscar */
@@ -60,29 +92,33 @@ nav a:hover{
     width: 220px;
     height: 24px;
     left: 803px;
-    top: 159px;
+    top: 175px;
 }
-#ibscr {
+#imbscdr img {
     /* icono lupa */
+    position: absolute;
     width: 32px;
     height: 23.23px;
-    color: white;
 }
-nav #ibscr:hover{
-    color:#D81324;
-}
-#icart{
+#imcar{
     /* icono Carrito */
+    position: absolute;
     width: 30px;
     height: 22px;
+    left: 1150px;
+    top: 175px;
 }
-.portada{
-    /* fondo de la pagina*/
+/*main{
     width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
+    height: 731px;
+    left: 0px;
+    top: 185px;    
+}*/
+main img{
+    grid-column: 1 ;
+	grid-row: 3;
+    /*top: 160px;*/
+    width: auto;
 }
 #iopcatda{
     /* Ropa para ELLAS */
@@ -124,108 +160,120 @@ nav #ibscr:hover{
     line-height: 110px;
     font-weight: 700;
 }
+
 footer{
-    /* PIE DE PAGINA*/
-    position: absolute;
+    grid-column: 1 ;
+	grid-row: 4;
     width: 100%;
-    height: 144px;
+    height: 124px;
+    /*left: 0px;
+    top: 0px;*/
     color:white;
     /* Rojo_Primario_Fuerte */
     background: #D81324;
     text-align: center;
-
 }
-/*---------------------------------------*/
-/*   CSS DEL CARRITO DE COMPRA           */
-/*---------------------------------------*/
-#opciall{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:repeat(2);
-    height: auto;
-}
-.opci{
-    grid-column: 1 / 2; 
-    grid-row: 1;
+/*-----------------------------------------*/
+/*           FICHA DE CATALOGOS            */
+/*-----------------------------------------*/
+main{
     width: 100%;
-    text-align: center;
-}
-.opci-aba{
-    grid-column: 1 / 2; 
-    grid-row: 2;
-    width: 100%;
-    text-align: center;
-}
-.opci-sub{
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    align-items: center;
-}
-.cardimage img {
-    width: 90px;
-    height: 114.35px;
-}
-.cantimage{
-    display:flex;
+    height: 731px;
+    top: 185px;
     align-content: center;
+    display: grid;
+    grid-template-columns: 1, 1fr;
+    grid-template-rows: 2;
+    grid-row-gap: 2.5em;
 }
-.okboton{
-    display: flex;
-}
-/*--------------------------------*/
-/* CSS DE COMPRA EXITOSA          */
-/*--------------------------------*/
-.exitoso{
-    color: red;
+.slider{
+    top: 247px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1;
+    grid-column-gap: 1em;
+	height: auto;
+    align-content: center;
     text-align: center;
 }
-.cancelado{
-    color: black;
-    text-align: center; 
-}
-/* -------------------------------*/
-/* CSS DE CATALOGOS               */
-/*--------------------------------*/
-#islider{
-    height: 630px;
-    display: flex;
-}
-.card {
-    top: 25px;
-    bottom: 25px;
+.nvgdrizq{
     width: 180px;
     height: 279px;
-    box-sizing: border-box;
-    border: 1px solid #000000;
-    border-radius: 5px; 
-    text-align: center;
     display:flex;
+    justify-content: right;
+    align-items: center;
+    vertical-align: middle
 }
-.card img{
-    /*width: 150px;*/
-    width: auto;
-    height: 190px;
+.nvgdrder{
+    width: 180px;
+    height: 279px;
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    vertical-align: middle
+}
+.flechas{
+    background: #D81324;
     text-align: center;
+
 }
-.card p{
-    float:left;
+.ficcat{
+    width: 180px;
+    height: 279px;
+    border: 1px solid #000000;
+    border-radius: 5px;    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3;
 }
-.card a img{
-    float:right;
-    width: 32px;
-    height: 32px;
+.ficcat img{
+    grid-column: 1 / 3;
+    grid-row: 1;
+    width: 170px;
+    height: 216px;
 }
-.flechaizq, .flechader {
+.ficcat p{
+    grid-column: 1 / 2;
+    grid-row: 2;
+    width: 80%;
+    height: 14px;
+    /*left: 305px;
+    top: 481px;*/
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+
     display: flex;
     align-items: center;
-    justify-content: center;
-    height: 279px;    
+
+    color: #000000;
 }
-.flechaizq img, .flechader img {
-    width: 32px;
-    height: 32px;
-    background: #D81324;
+.ficcat .precio{
+    grid-column: 1 / 2;
+    grid-row: 3;
+    width: 80%;
+    margin-top: 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    
 }
+.ficcat .cartico{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-content: center;
+    margin-top: 10px;
+} 
+.ficcat .imgcarro {
+    width: 30px;
+    height: 30px;
+    align-content: center;
+}
+

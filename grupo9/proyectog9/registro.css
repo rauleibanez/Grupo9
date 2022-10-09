@@ -1,6 +1,4 @@
-* {
-    /*border: 1px dashed red;*/
-}
+
 form{
   text-align: center;
   border: 1px;
@@ -12,7 +10,4 @@ form{
 }
 .confirmado{
     float: right;
-}
-.margen{
-    
 }
