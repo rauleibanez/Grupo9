@@ -1,118 +1,48 @@
-header{
-    position: relative;
-    width: 100%;
-    height: 194.16px;
-    /* Fondo Header */
-    /* Rojo_Primario_Fuerte */
+/*************************************************
+ * Archivo    : styles.css;
+ * Descripcion: Hoja de estilos CSS de la pagina index.html de
+ *              del Proyecto Final Modulo 4;
+ * Autor      : Raul Ibañez;
+ * Version    : 2.0;
+ * Fecha      : 13/10/2022;
+ * Integrantes: Becerra Nicolas
+ *              Castañeda Stiven
+ *              Guevara Nelson
+ *              Ibañez Raul
+ *-----------------------------------------------
+ * Implementacion de Bootstrap y Media Queries
+ *-----------------------------------------------
+ */
+ header{
+    /* COLOR DE FONDO DEL HEADER */
     background: #D81324;
-    z-index: 1;
 }
-header p{
-    /* Titulo del Header */
-    position: absolute;
-    width: 426px;
-    height: 74px;
-    left: 20px;
-    top: 45px;
-    font-family: 'Tinos';
-    font-style: normal;
-    font-weight: 325;
-    font-size: 50px;
-    line-height: 74px;
-    /* identical to box height */
-    text-align: center;
-    color: #FFFFFF;
-}
-#ilogo{
-    /* Logo */
-    z-index:3;
-    position: relative;
+.fondo{
+    /* IMAGEN DE FONDO DEL BODY */
     width: 100%;
-    height: 148px;
-    text-align: center;
-}
-nav{
-    /* Fondo NavBar */
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    height: 46.16px;
-    overflow: hidden;
-    /* Negro_Secundario_Fuerte */
-    background: #000000;
-}
-nav a{
-    color:white;
-    text-decoration: none;
-}
-nav a:hover{
-    color:#D81324;
-}
-#ifbscr{
-    /*input del Form del buscador del Navbar*/
-    height: 24px;
-    width: 150px;
-    left: 970px;
-}
-#imbscdr{
-    /* caja de texto buscar */
-    position: absolute;
-    width: 220px;
-    height: 24px;
-    left: 803px;
-    top: 159px;
-}
-#ibscr {
-    /* icono lupa */
-    width: 32px;
-    height: 23.23px;
-    color: white;
-}
-nav #ibscr:hover{
-    color:#D81324;
-}
-#icart{
-    /* icono Carrito */
-    width: 30px;
-    height: 22px;
-}
-.portada{
-    /* fondo de la pagina*/
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    position: relative;
+    height: 100vh;
+    background: url("../img/fondo.jpg") no-repeat top center;
+
 }
 #iopcatda{
-    /* Ropa para ELLAS */
-    position: absolute;
-    width: 416px;
-    height: 220px;
-    left: 77px;
-    top: 339px;
+    /* OPCION DEL CATALOGO PARA DAMAS */
+    margin-top: 9rem;
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 110px;
-    text-align: center;
+    font-weight: 200;
+    font-size: 76px;
+    line-height: 90px;
     color: #FFFFFF;
     transform: rotate(-22.35deg);
 }
 #iopcatca{
-    /* Ropa para ELLOS */
-    position: absolute;
-    width: 416px;
-    height: 220px;
-    left: 832px;
-    top: 339px;
+    /* OPCION DEL CATALOGO PARA CABALLEROS */
+    margin-top: 9rem;
     font-family: 'Tinos';
     font-style: normal;
-    font-weight: 400;
-    font-size: 96px;
-    line-height: 110px;
-    text-align: center;
+    font-weight: 200;
+    font-size: 76px;
+    line-height: 90px;
     color: #FFFFFF;
     transform: rotate(-22.35deg);    
 }
@@ -125,16 +55,75 @@ nav #ibscr:hover{
     font-weight: 700;
 }
 footer{
-    /* PIE DE PAGINA*/
-    position: absolute;
-    width: 100%;
-    height: 144px;
-    color:white;
-    /* Rojo_Primario_Fuerte */
+    /* FONDO DEL FOOTER */
     background: #D81324;
-    text-align: center;
-
 }
+footer p{
+    /* LETRAS DEL FOOTER*/
+    color:#FFFFFF;
+}
+/**********************************************
+ *    MEDIA QUERIES
+ **********************************************
+ */
+@media screen and (max-width: 420px){
+    .fondo{
+        /* SE REDUCE EL TAMAÑO DEL BODY */
+        height: 80vh;
+    }
+    #iopcatda{
+        /* OPCION DEL CATALOGO PARA DAMAS REDUCIDO */
+        margin-top: 1rem;
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 60;
+        font-size: 40px;
+        line-height: 45px;*/
+        color: #FFFFFF;
+        transform: rotate(0.0deg);
+    }
+    #iopcatca{
+        /* OPCION DEL CATALOGO PARA CABALLEROS REDUCIDO */
+        margin-top: 1rem;
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight:60;
+        font-size: 40px;
+        line-height: 45px;
+        color: #FFFFFF;
+        transform: rotate(0.0deg);
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 960px){
+    .fondo{
+        /* SE REDUCE EL TAMAÑO DEL BODY */
+        height: 50vh;
+     }
+    #iopcatda{
+        /* OPCION DEL CATALOGO PARA DAMAS REDUCIDO */
+        margin-top: 1rem;
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 56px;
+        line-height: 70px;*/
+        color: #FFFFFF;
+        transform: rotate(0.0deg);
+    }
+    #iopcatca{
+        /* OPCION DEL CATALOGO PARA CABALLEROS REDUCIDO */
+        margin-top: 1rem;
+        font-family: 'Tinos';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 56px;
+        line-height: 70px;*/
+        color: #FFFFFF;
+        transform: rotate(0.0deg);
+    }
+}
+
 /*---------------------------------------*/
 /*   CSS DEL CARRITO DE COMPRA           */
 /*---------------------------------------*/
@@ -189,9 +178,9 @@ footer{
 /* -------------------------------*/
 /* CSS DE CATALOGOS               */
 /*--------------------------------*/
-#islider{
+.slider{
     height: 630px;
-    display: flex;
+    /*display: flex;*/
 }
 .card {
     top: 25px;
